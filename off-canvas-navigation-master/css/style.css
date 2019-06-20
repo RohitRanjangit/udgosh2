@@ -1,5 +1,73 @@
 /* common styles !!!YOU DON'T NEED THEM  */
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+fa {
+  padding: 20px;
+  font-size: 0px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.copyright{
+  text-emphasis-color: #ffffffff;
+  color:#ffff;
+}
 
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: rgb(185, 41, 61);
+  color: white;
+}
+.fa-instagram {
+  background: rgb(208, 90, 231);
+  color: white;
+}
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+
+.social-icons a {
+  position: relative;
+  display: block;
+  width: 28px;
+  height: 28px;
+  word-break: break-all;
+}
+
+.social-icons  span  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+}
+
+#footer{
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
 .content {
   width: 768px;
   padding-top: 11%;
@@ -56,61 +124,6 @@ h2 {
   text-decoration: underline;
 }
 
-.demo-btns {
-  display: flex;
-  justify-content: space-between;
-}
-
-.demo-btn {
-  transition-property: all;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
-  transition-delay: 0s;
-  padding: 8px 15px;
-  background-color: transparent;
-  outline: none;
-  border: 2px solid currentColor;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.demo-btn:nth-child(1) {
-  color: #00BD9D;
-}
-.demo-btn:nth-child(2) {
-  color: #832161;
-}
-.demo-btn:nth-child(3) {
-  color: #FE9000;
-}
-.demo-btn:nth-child(4) {
-  color: #D72638;
-}
-.demo-btn:nth-child(5) {
-  color: #FC448D;
-}
-.demo-btn:hover, .demo-btn.js-active {
-  color: #fff;
-}
-.demo-btn:hover:nth-child(1), .demo-btn.js-active:nth-child(1) {
-  background-color: #00BD9D;
-  border-color: #00BD9D;
-}
-.demo-btn:hover:nth-child(2), .demo-btn.js-active:nth-child(2) {
-  background-color: #832161;
-  border-color: #832161;
-}
-.demo-btn:hover:nth-child(3), .demo-btn.js-active:nth-child(3) {
-  background-color: #FE9000;
-  border-color: #FE9000;
-}
-.demo-btn:hover:nth-child(4), .demo-btn.js-active:nth-child(4) {
-  background-color: #D72638;
-  border-color: #D72638;
-}
-.demo-btn:hover:nth-child(5), .demo-btn.js-active:nth-child(5) {
-  background-color: #FC448D;
-  border-color: #FC448D;
-}
 
 /* page's styles !!!YOU NEED THEM */
 
@@ -216,7 +229,7 @@ h2 {
 .nav__close:before {
   position: absolute;
   top: 0;
-  left: 18px;
+  right: 18px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
@@ -235,7 +248,7 @@ h2 {
 .nav-open-btn {
   position: absolute;
   top: 30px;
-  left: 30px;
+  right: 30px;
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: linear;
@@ -263,17 +276,17 @@ h2 {
 .nav-open-btn__bar:nth-child(1) {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
 }
 .nav-open-btn__bar:nth-child(2) {
   position: absolute;
   top: 10px;
-  left: 0;
+  right: 0;
 }
 .nav-open-btn__bar:nth-child(3) {
   position: absolute;
   top: 20px;
-  left: 0;
+  right: 0;
 }
 
 /* Demo #1: styles */
@@ -282,15 +295,15 @@ h2 {
   transition-duration: 0.2s;
   transition-timing-function: linear;
   transition-delay: 0s;
-  left: -300px;
+  right: -300px;
   /* opened styles */
 }
 .nav--offcanvas-1.js-opened {
-  transition-property: left;
+  transition-property: right;
   transition-duration: 0.2s;
   transition-timing-function: linear;
   transition-delay: 0s;
-  left: 0;
+  right: 0;
   opacity: 1;
   visibility: visible;
 }
@@ -300,7 +313,7 @@ h2 {
   transition-duration: 0.2s;
   transition-timing-function: linear;
   transition-delay: 0s;
-  left: 0;
+  right: 0;
   /* opened styles */
 }
 .page__content--offcanvas-1.js-opened {
@@ -308,7 +321,7 @@ h2 {
   transition-duration: 0.3s;
   transition-timing-function: linear;
   transition-delay: 0s;
-  left: 300px;
+  right: 300px;
 }
 
 /* Demo #2: styles */
@@ -317,15 +330,15 @@ h2 {
   transition-duration: 0.2s;
   transition-timing-function: linear;
   transition-delay: 0s;
-  left: -300px;
+  right: -300px;
   /* opened styles */
 }
 .nav--offcanvas-2.js-opened {
-  transition-property: left;
+  transition-property: right;
   transition-duration: 0.2s;
   transition-timing-function: linear;
   transition-delay: 0s;
-  left: 0;
+  right: 0;
   opacity: 1;
   visibility: visible;
 }
@@ -349,15 +362,15 @@ h2 {
   transition-duration: 0.2s;
   transition-timing-function: linear;
   transition-delay: 0s;
-  left: -300px;
+  right: -300px;
   /* opened styles */
 }
 .nav--offcanvas-3.js-opened {
-  transition-property: left;
+  transition-property: right;
   transition-duration: 0.2s;
   transition-timing-function: linear;
   transition-delay: 0s;
-  left: 0;
+  right: 0;
   opacity: 1;
   visibility: visible;
 }
@@ -384,8 +397,8 @@ h2 {
   max-height: 80%;
   -webkit-transform: rotateY(-75deg) translateX(-50px);
           transform: rotateY(-75deg) translateX(-50px);
-  -webkit-transform-origin: left center;
-          transform-origin: left center;
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
   /* opened styles */
 }
 .nav--offcanvas-4.js-opened {
@@ -395,8 +408,8 @@ h2 {
   transition: transform .22s linear 0s, opacity .22s linear 0s, visibility .22s linear 0s, -webkit-transform .22s linear 0s;
   -webkit-transform: rotateY(0) translateX(0);
           transform: rotateY(0) translateX(0);
-  -webkit-transform-origin: left center;
-          transform-origin: left center;
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
   opacity: 1;
   visibility: visible;
 }
@@ -406,11 +419,11 @@ h2 {
   transition-duration: 0.2s;
   transition-timing-function: linear;
   transition-delay: 0s;
-  left: 0;
+  right: 0;
   /* opened styles */
 }
 .page__content--offcanvas-4.js-opened {
-  left: 300px;
+  right: 300px;
 }
 
 /* Demo #5: styles */
@@ -432,9 +445,9 @@ h2 {
   transition-duration: 0.2s;
   transition-timing-function: linear;
   transition-delay: 0s;
-  left: 0;
+  right: 0;
   /* opened styles */
 }
 .page__content--offcanvas-5.js-opened {
-  left: 300px;
+  right: 300px;
 }
