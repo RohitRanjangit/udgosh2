@@ -4,9 +4,6 @@
 * {
 	box-sizing: border-box;
 }
-html{
-	background-image: url('https://fbcd.co/product-lg/3bd1478d838c0e275468064b81ea8c0b_resize.jpg');
-}
 #container{
 	margin:8% 8% 8% 25%;
 	background: #f6f5f7;
