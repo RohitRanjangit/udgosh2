@@ -232,6 +232,5 @@ input {
 body{
 	background-image: url('https://cdn3.eyeem.com/thumb/f53df526fc2b92a2f1636701c73d3efaecf8e346-1556813528826/w/600');
 	background-repeat: no-repeat;
-  	background-size: cover;
-	height: 100%
+  	background-size: 100% 100%;
 }
