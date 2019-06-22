@@ -16,10 +16,7 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 	height:45%;
 	/* height: 100vh;*/
 	margin: 5% auto; 
-	-webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
+	
 }
 
 h1 {
