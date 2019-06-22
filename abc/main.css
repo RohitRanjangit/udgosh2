@@ -4,6 +4,7 @@
 * {
 	box-sizing: border-box;
 }
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 #container{
 	margin:8% 8% 8% 25%;
 	background: #f6f5f7;
